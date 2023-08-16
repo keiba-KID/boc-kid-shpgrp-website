@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/site_logo.png" sizes="16x16">
+
+    <!-- キャッシュを無効化-->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Jquery-UI CSS -->
+    <link type="text/css" rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.min.css" />
+  
+    <!-- サイト共通 CSS -->
+    <link href="./css/base.css" rel = "stylesheet" type = "text/css" media = "all">
+
+    <!-- タイトル -->
+    <title>BOCコミュニティ</title>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class = "sticky-top">
+      <nav class="navbar navbar-expand" id="header" style="padding: 0em;">
+        <a class="navbar-brand" href="/index.html" style="display: flex; justify-content: left; align-items: center;"><span style="margin-left: 20px; font-size: 1.0em;">BOC コミュニティ</span></a>
+        <div class="navbar-collapse justify-content-end">
+          <!-- <div class="text-right">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#" style="font-size: 0.8em;">新規登録</a></li>
+              <li class="list-inline-item"><a id="lnk_mypage" href="#" style="font-size: 0.8em;">ログイン</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- メイン -->
+    <main>
+      <a href="javascript:goBack();">戻る</a>
+      <h1 class="headline">基本情報</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- 名前 -->
+          <div class="form-group row" style="margin: 1em;">
+            <label for="user-name">お名前</label>
+            <input type="text" readonly class="form-control-plaintext" id="user_name" name="user_name" placeholder="お名前">
+          </div>          
+          <!-- パスワード変更 -->
+          <div class="form-group row for_private" style="margin: 1em;">
+            <button class="btn btn-primary"  id="btn-edit" onclick="javascript:onClickedMyPageEdit();">編集</button>
+          </div>          
+        </div>
+        <div class="col-lg-4">
+          <!-- 保有ポイント -->
+          <div class="row" style="margin: 1em;">
+            <span>保有ポイント</span>
+          </div>
+          <div class="row" style="margin: 1em;">
+            <span><span id="avaival_pt"></span>&nbsp;ポイント</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <!-- ランク -->
+          <div class="row" style="margin: 1em;">
+            <span id="title_name" style="font-size: 2em; vertical-align: middle;">世界G1クラス</span>
+          </div>
+          <div class="row" style="margin: 1em;">
+            <img id="title_img" src="img/title_wg.png" style="height: 4em;">
+          </div>
+        </div>
+      </div>
+      <h1 class="headline">投票成績</h1>
+        <div class="col-12">
+          <div class="card" style="background-color: rgba(0,0,0,0);">
+            <div class="card-header" style="background-color: rgb(197,243,243);">予選バトル</div>
+            <div class="card-body">
+              <div class="row">
+                <!-- 参加回数 -->
+                <div class="col-6">
+                  参加回数：<span>48</span>回
+                </div>
+              </div>
+              <div class="row">
+                <!-- 成績詳細 -->
+                <div class="col-lg-8">
+                  <table class="table mb-0">
+                    <thead class="thead-light">
+                      <tr>
+                        <th rowspan="2" class="h_rowspan_cell">レース名</th>
+                        <th colspan="3" style="text-align: center; margin: 0; padding: 0;">◎&nbsp;<span id="h_mk1">15/25</span></th>
+                        <th colspan="3" style="text-align: center; margin: 0; padding: 0;">穴&nbsp;<span id="h_mk5">8/25</span></th>
+                        <th colspan="3" style="text-align: center; margin: 0; padding: 0;">消&nbsp;<span id="h_mk6">18/23</span></th>
+                      </tr>
+                      <tr>
+                        <th colspan="3" style="text-align: center; margin: 0; padding: 0;">〇&nbsp;<span id="h_mk2">15/25</span></th>
+                        <th colspan="3" style="text-align: center; margin: 0; padding: 0;">▲&nbsp;<span id="h_mk3">15/25</span></th>
+                        <th colspan="3" style="text-align: center; margin: 0; padding: 0;">☆&nbsp;<span id="h_mk4">15/25</span></th>
+                      </tr>
+                    </thead>
+                    <tbody id="vote_history" style="background-color: white;" >
+                    </tbody>
+                  </table>
+                </div>
+                <!-- 概要 -->
+                <div class="col-lg-4" style="font-size: 1.0em;">
+                  <!-- ランク -->
+                  <div class="row">
+                    <div class="col-6">
+                      参加回数：<span id="vote_count">48</span>回
+                    </div>
+                  </div>
+                  <!-- ヘッダー -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;"></div>
+                    <div class="col-2" style="margin: 0; padding: 0;">月間</div>
+                    <div class="col-2" style="margin: 0; padding: 0;">年間</div>
+                    <div class="col-2" style="margin: 0; padding: 0;">上期</div>
+                    <div class="col-2" style="margin: 0; padding: 0;">下期</div>
+                  </div>
+                  <!-- Pt -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">Pt</div>
+                    <div class="col-2" id="pt_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="pt_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="pt_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="pt_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- ◎ -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">◎</div>
+                    <div class="col-2" id="mk1_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk1_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk1_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk1_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- 〇 -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">〇</div>
+                    <div class="col-2" id="mk2_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk2_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk2_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk2_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- ▲ -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">▲</div>
+                    <div class="col-2" id="mk3_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk3_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk3_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk3_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- ☆ -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">☆</div>
+                    <div class="col-2" id="mk4_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk4_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk4_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk4_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- 穴 -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">穴</div>
+                    <div class="col-2" id="mk5_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk5_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk5_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk5_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- 消 -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">消</div>
+                    <div class="col-2" id="mk6_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk6_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk6_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="mk6_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- 単回収率 -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">単率</div>
+                    <div class="col-2" id="p1_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="p1_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="p1_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="p1_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                  <!-- 複回収率 -->
+                  <div class="row">
+                    <div class="col-2" style="margin: 0; padding: 0;">複率</div>
+                    <div class="col-2" id="p2_month" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="p2_year" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="p2_first_half" style="margin: 0; padding: 0;">20pt</div>
+                    <div class="col-2" id="p2_last_half" style="margin: 0; padding: 0;">20pt</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- フッター -->
+    <footer style="text-align: center;">
+      <small>Copyright© BOCコミュニティ All Rights Reserved.</small>
+    </footer>
+
+    <!-- jQuery、Popper.js、Bootstrap.jsの順番で読み込みます（下記はbundle版を使用） -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.metamarket.quest/market.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js" integrity="sha256-tcqPYPyxU+Fsv5sVdvnxLYJ7Jq9wWpi4twZbtZ0ubY8=" crossorigin="anonymous"></script>
+
+    <!-- 共通関数 -->
+    <script src="js/common.js"></script>
+
+    <!-- BOC Seviceライブラリ -->
+    <script src="js/service_config.js"></script>
+    <script src="js/boc_service.js"></script>
+
+    <!-- ページ固有のJavaScript -->
+    <script src="js/mypage.js"></script>
+  </body>
+</html>

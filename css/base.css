@@ -1,0 +1,171 @@
+/* 基本タグの設定 */
+body {
+  background-color: rgb(254,213,183);
+  color: black;
+}
+
+header{
+  background-color: rgb(136,255,167);
+  font-size: 1.0em;
+}
+
+main{
+  margin: 1em;
+}
+
+thead.user_list, tbody.user_list {
+  display: block;
+}
+tbody.user_list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 300px;
+}
+th.user_list, td.user_list {
+  width: 200px;
+}
+
+.headline {
+  width: 100%;
+  padding-left: 1em;
+  font-size: 1.2em;
+  background-color: rgb(255,83,0);
+  color: white;
+}
+
+/* ヘッダーナビバー関連 */
+.navbar-brand {
+  background: url("../img/site_logo.png") no-repeat left center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+header, header a, header a:link, header a:visited, header a:hover, header a:active{
+  color: black;		/* text-muted */
+}
+
+.nav-link{
+  color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(255,128,0);
+}
+
+/* 共通 */
+.data_cell{
+  text-align: left; 
+  margin: 0; 
+  padding: 0;
+}
+.h_cell{
+  text-align: center; margin: 0; padding: 0;
+}
+.h_rowspan_cell{
+  text-align: center; 
+  margin: 0; 
+  padding: 0; 
+  vertical-align: middle;
+}
+.d_rowspan_cell{
+  text-align: left; 
+  margin: 0; 
+  padding: 0; 
+  vertical-align: middle;
+}
+
+/* スライダー関連 */
+/* .swiper-container {
+  width: 100%;
+} */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  z-index: 1;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(254,213,183,0);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* 縦横中央コンテナ */
+.v-middle-box{
+  margin: 2em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.tbl-cell{
+  font-size: 0.6em; 
+  margin: 0; 
+  padding: 0;
+}
+
+.hit-cell{
+  background-color: rgb(255,205,209);
+  color: rgb(174,59,56);
+  font-weight:bold;
+  text-align: center;
+}
+
+.lost-cell{
+  background-color: rgb(154,190,235);
+  color: rgb(96,130,221);
+  text-align: center;
+}
+
+.btn-large{
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(255,128,0);
+  width: 50%;
+  margin: 1em;
+  border-radius: 1em;
+}
+
+.rank_top{
+  color: red;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.rank{
+  color: blue;
+  font-size: 0.8em;
+}
+
+.rank_title{
+  font-weight: bold;
+  font-size: 1.0em;
+  background-color: rgba(0,0,0,0);
+}
+
+/* ユーザー管理のテーブル */
+/* #tbl_users .tablesorter-header {
+  cursor: pointer;
+  outline: none;
+}
+#tbl_users .tablesorter-header-inner::after { 
+  content: '▼';
+  font-size: 12px;
+  margin-left: 5px;
+} */

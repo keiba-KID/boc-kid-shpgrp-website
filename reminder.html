@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/site_logo.png" sizes="16x16">
+
+    <!-- キャッシュを無効化-->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Jquery-UI CSS -->
+    <link type="text/css" rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.min.css" />
+  
+    <!-- サイト共通 CSS -->
+    <link href="./css/base.css" rel = "stylesheet" type = "text/css" media = "all">
+
+    <!-- タイトル -->
+    <title>BOCコミュニティ</title>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class = "sticky-top">
+      <nav class="navbar navbar-expand" id="header" style="padding: 0em;">
+        <a class="navbar-brand" href="/index.html" style="display: flex; justify-content: left; align-items: center;"><span style="margin-left: 20px; font-size: 1.0em;">BOC コミュニティ</span></a>
+        <div class="navbar-collapse justify-content-end">
+          <!-- <div class="text-right">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#" style="font-size: 0.8em;">新規登録</a></li>
+              <li class="list-inline-item"><a id="lnk_mypage" href="#" style="font-size: 0.8em;">ログイン</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- メイン -->
+    <main>
+      <div class="v-middle-box row">
+        <form action="javascript:reminder();">
+          <div class="form-group">
+            <label for="user_email">Eメールアドレス</label>
+            <input type="email" class="form-control" id="user_email" placeholder="sample@domain.co.jp">
+            <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <button type="submit" class="btn btn-primary">パスワード送信</button>          
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary" onclick="javascript:window.history.back(-1);return false;">戻る</button>          
+            </div>
+          </div>          
+        </form>
+      </div>
+    </main>
+
+    <!-- フッター -->
+    <footer style="text-align: center;">
+      <small>Copyright© BOCコミュニティ All Rights Reserved.</small>
+    </footer>
+
+    <!-- jQuery、Popper.js、Bootstrap.jsの順番で読み込みます（下記はbundle版を使用） -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.metamarket.quest/market.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js" integrity="sha256-tcqPYPyxU+Fsv5sVdvnxLYJ7Jq9wWpi4twZbtZ0ubY8=" crossorigin="anonymous"></script>
+
+    <!-- 共通関数 -->
+    <script src="js/common.js"></script>
+
+    <!-- BOC Seviceライブラリ -->
+    <script src="js/service_config.js"></script>
+    <script src="js/boc_service.js"></script>
+
+    <!-- ページ固有のJavaScript -->
+    <script src="js/reminder.js"></script>
+  </body>
+</html>

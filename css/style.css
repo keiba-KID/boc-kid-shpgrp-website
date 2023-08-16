@@ -1,0 +1,43 @@
+/* 共通 */
+body {
+  background-color: rgb(254,213,183);
+  color: black;
+}
+
+header, header a, header a:link, header a:visited, header a:hover, header a:active{
+  color: black;		/* text-muted */
+}
+
+
+/* ヘッダーナビバー関連 */
+.navbar-brand {
+  background: url("../img/site_logo.png") no-repeat left center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+/* room関連 */
+.room-header {
+  background-color: rgb(185,237,251);
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.panel-header {
+  background-color: rgb(185,237,251);
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.rank_top{
+  color: red;
+  font-size: 25px;
+}
+
+.rank{
+  color: blue;
+  font-size: 20px;
+}
