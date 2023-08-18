@@ -1,18 +1,22 @@
-0,1804,0,,<SMALL>負荷計測 CPU(0.1796875) : user(0.15625) system(0.0234375)</SMALL>
-0,1804,6,,<span class="islName"><B>ゆゆう島(6, 11)</B></span>の<B>海</B>に<span class=disaster><B>隕石</B></span>が落下しました。
-0,1804,6,,<span class="islName"><B>ゆゆう島(18, 13)</B></span>地点の<B>荒地</B>に<span class=disaster><B>隕石</B></span>が落下、一帯が水没しました。
-0,1804,6,,<span class="islName"><B>ゆゆう島(10, 18)</B></span>地点の<B>平地</B>に<span class=disaster><B>隕石</B></span>が落下、一帯が水没しました。
-0,1804,6,,<span class="islName"><B>ゆゆう島(3, 3)</B></span>地点の<B>農業大学</B>に<span class=disaster><B>隕石</B></span>が落下、一帯が水没しました。
-0,1804,6,,<span class="islName"><B>ゆゆう島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
-0,1804,23,,<span class="islName"><B>ちょろ島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
-0,1804,7,,<span class="islName"><B>おみそ島</B></span>の<B>動物園</B>から、<B>828億円</B>の収益が上がりました。(食料<B>250000トン</B>消費)。
-0,1804,7,,<span class="islName"><B>おみそ島(10, 2)</B></span>の<B>多目的スタジアム</B>から、<B>260億円</B>の収益が上がりました。
-0,1804,7,,<span class="islName"><B>おみそ島(9, 2)</B></span>の<B>海あみゅ</B>から、<B>550億円</B>の収益が上がりました。
-0,1804,18,,<span class="islName"><B>とっつぁん島</B></span>の<B>動物園</B>から、<B>453億円</B>の収益が上がりました。(食料<B>200000トン</B>消費)。
-0,1804,18,,<span class="islName"><B>とっつぁん島(5, 13)</B></span>の<B>海あみゅ</B>から、<B>13億円</B>の収益が上がりました。
-0,1804,8,,<span class="islName"><B>willy島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
-0,1804,1,,<span class="islName"><B>KID島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
-0,1804,2,,<span class="islName"><B>ドドンガ島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
-0,1804,10,,<span class="islName"><B>ネコメノイタズラ 島(19, 16)</B></span>の<B>海あみゅ</B>から、<B>182億円</B>の収益が上がりました。
-0,1804,33,,<span class="islName"><B>やざっち島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
-0,1804,2,,<span class="islName"><B>ドドンガ島</B></span>の<span class=disaster><B>電力が不足</B></span>しています！！
+0,1819,0,,<SMALL>負荷計測 CPU(0.2109375) : user(0.171875) system(0.0390625)</SMALL>
+0,1819,18,,<span class="islName"><B>とっつぁん島(15, 1)</B></span>地点の<B>海</B>は、<span class=disaster><B>噴火</B></span>の影響で海底が隆起、浅瀬になりました。
+0,1819,18,,<span class="islName"><B>とっつぁん島(14, 2)</B></span>地点の<B>海</B>は、<span class=disaster><B>噴火</B></span>の影響で海底が隆起、浅瀬になりました。
+0,1819,18,,<span class="islName"><B>とっつぁん島(15, 3)</B></span>地点の<B>海</B>は、<span class=disaster><B>噴火</B></span>の影響で海底が隆起、浅瀬になりました。
+0,1819,18,,<span class="islName"><B>とっつぁん島(16, 3)</B></span>地点の<B>海</B>は、<span class=disaster><B>噴火</B></span>の影響で海底が隆起、浅瀬になりました。
+0,1819,18,,<span class="islName"><B>とっつぁん島(16, 2)</B></span>地点の<B>海</B>は、<span class=disaster><B>噴火</B></span>の影響で海底が隆起、浅瀬になりました。
+0,1819,18,,<span class="islName"><B>とっつぁん島(16, 1)</B></span>地点の<B>海</B>は、<span class=disaster><B>噴火</B></span>の影響で海底が隆起、浅瀬になりました。
+0,1819,18,,<span class="islName"><B>とっつぁん島(15, 2)</B></span>地点で<span class=disaster><B>火山が噴火</B></span>、<B>山</B>が出来ました。
+0,1819,10,,<span class="islName"><B>ネコメノイタズラ 島(19, 16)</B></span>の<B>海あみゅ</B>から、<B>97億円</B>の収益が上がりました。
+0,1819,33,,<span class="islName"><B>やざっち島(12, 8)</B></span>の<B>多目的スタジアム</B>でイベントが開催され、<B>36000トン</B>の食料が消費されました。
+0,1819,8,,<span class="islName"><B>willy島(4, 5)</B></span>の<B>海あみゅ</B>から、<B>22億円</B>の収益が上がりました。
+0,1819,1,,<span class="islName"><B>KID島</B></span>の<B>動物園</B>から、<B>812億円</B>の収益が上がりました。(食料<B>175000トン</B>消費)。
+0,1819,1,,<B>奇獣スライム</B>の残骸には、<B>100億円</B>の値が付きました。
+0,1819,1,,<span class="islName"><B>KID島</B></span>の<B>マスコットいのら</B>が<span class="islName"><B>(2, 18)</B></span>の<B>奇獣スライム</B>を攻撃し<span class=disaster><B>4</B></span>のダメージを与え<span class=disaster><B>0</B></span>のダメージを受けました。
+0,1819,23,,<span class="islName"><B>ちょろ島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
+0,1819,18,,<span class="islName"><B>とっつぁん島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
+0,1819,2,,<span class="islName"><B>ドドンガ島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
+0,1819,7,,<span class="islName"><B>おみそ島</B></span>は<span class=disaster><B>不景気</B></span>により成長が停滞気味のようです！！
+0,1819,6,,<span class="islName"><B>ゆゆう島</B></span>の<B>動物園</B>から、<B>471億円</B>の収益が上がりました。(食料<B>200000トン</B>消費)。
+0,1819,6,,<span class="islName"><B>ゆゆう島(13, 9)</B></span>の<B>海あみゅ</B>から、<B>153億円</B>の収益が上がりました。
+0,1819,2,,<span class="islName"><B>ドドンガ島</B></span>の<span class=disaster><B>電力が不足</B></span>しています！！
+0,1819,7,,<span class="islName"><B>おみそ島</B></span>の<span class=disaster><B>電力が不足</B></span>しています！！
